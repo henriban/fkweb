@@ -1,0 +1,13 @@
+{% extends "mainpage/navbar.html" %}
+{% load static %}
+{% block content %}
+<div class="content">
+    <h2>Galleri</h2>
+    <div class="slideshow">
+        <div id="numbertext">1 / 2</div>
+        <img class="slideshowimg" src="{% static 'mainpage/img/1.jpg' %}" id="slide" alt="Lovely pictures" >    
+    </div>
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+</div>
+{% endblock %}

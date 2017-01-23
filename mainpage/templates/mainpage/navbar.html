@@ -1,0 +1,32 @@
+<!--
+Template for navbar. Dette er parent-templaten til alt på siden.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FK-web</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mainpage/css/style.css' %}" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'mainpage/js/script.js' %}"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="/main">   
+            <img src="{% static 'mainpage/img/logoSmall.gif' %}" alt="My image" height="50" width="50"/>
+        </a>
+        <div class="right-navbar">
+            <a href="/main/slideshow">Hvem</a>
+            <a>Teknisk</a>
+            <a>Studio</a>
+            <a>Anmodning</a>
+            <a>Login</a>
+        </div>
+        
+    </div>
+    {% block content %}
+    {% endblock %}
+</body> 
+</html>
