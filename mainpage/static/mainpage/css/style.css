@@ -11,6 +11,7 @@ body {
     margin: 0;
     font-family: "Open Sans";
     background-color: #444;
+    width: 100%;
 
 }
 
@@ -30,6 +31,18 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #191919;
+}
+
+.homebtn {
+    display: flex;
+    align-items: center;
+    min-width: 270px;
+    justify-content: space-around;
+}
+
+.homebtn span {
+    color: #A30D0D;
+    font-size: 120%;
 }
 
 .right-navbar{
